@@ -44,12 +44,10 @@ public class MathApp {
         System.out.println("Q4:Find and display the square root of a variable after it is set to 5.0");
         double baseNumber = 5.0;
 
-       double mathSqrt = Math.sqrt(baseNumber);
+        double mathSqrt = Math.sqrt(baseNumber);
 
 
         System.out.println("The answer is " + mathSqrt );
-
-
 
         //Question 5:
         System.out.println("Q5:The distance between the points (5,10) and (85,50)");
@@ -58,16 +56,9 @@ public class MathApp {
         double y1 = 10;
         double y2 = 50;
 
-
-
         double calculateDistance = Math.sqrt( (Math.pow(x2 - x1, 2) ) + Math.pow(y2 - y1, 2) );
 
-
         System.out.println("The answer is " + calculateDistance);
-
-
-
-
 
         //Question 6:
         System.out.println("Q6: Change -3.8 to a positive number");
@@ -78,8 +69,6 @@ public class MathApp {
         System.out.println("The answer is " + positiveValue );
 
 
-
-
         //Question 7:
         System.out.println("Q7: Find a random number between 0 and 1");
 
@@ -87,17 +76,6 @@ public class MathApp {
 
 
         System.out.println("The answer is " + randomNumber);
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

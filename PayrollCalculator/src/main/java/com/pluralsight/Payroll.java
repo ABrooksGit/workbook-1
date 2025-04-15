@@ -15,7 +15,10 @@ public class Payroll {
             pay_rate = pay_rate * 1.5;
 
         }
-        System.out.println("Hey " + name + ". Here is your pay");
+        double gross_pay = hours_worked * pay_rate;
+
+        System.out.println("Hey " + name + ". Here is your pay " + gross_pay );
+        System.out.printf("%s worked %.1f hours at an hourly rate of $%.1f and made $%.1f", name, hours_worked, pay_rate, gross_pay);
         System.out.println(hours_worked * pay_rate);
 
 

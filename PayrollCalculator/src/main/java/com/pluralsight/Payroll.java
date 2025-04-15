@@ -17,7 +17,6 @@ public class Payroll {
         }
         System.out.println("Hey " + name + ". Here is your pay");
         System.out.println(hours_worked * pay_rate);
-        
 
 
 

@@ -29,23 +29,23 @@ public class Calculator {
         double remainder = number1 / number2;
 
 
-        if (letter.equals("a")) {
+        if (letter.equals("a") || letter.equals("A")){
 
             System.out.println("You've chosen addition");
             System.out.printf("The sum of %.1f and %.1f is %.1f\n", number1, number2, sum);
             System.out.printf("%.1f + %.1f = %.1f\n", number1, number2, sum);
 
-        } else if (letter.equals("s")) {
+        } else if (letter.equals("s") || letter.equals("S")) {
 
             System.out.println("You've chosen subtraction");
             System.out.printf("The difference between %.1f and %.1f is %.1f\n", number1, number2, difference);
             System.out.printf("%.1f - %.1f = %.1f\n", number1, number2, difference);
-        } else if ( letter.equals("m")) {
+        } else if ( letter.equals("m") || letter.equals("M") )  {
 
             System.out.println("You've chosen multiplication");
             System.out.printf("The product of %.1f and %.1f is %.1f\n", number1, number2, product);
             System.out.printf("%.1f * %.1f = %.1f\n", number1, number2, product);
-        } else if ( letter.equals("d")) {
+        } else if ( letter.equals("d") || letter.equals("D")) {
 
             System.out.println("You've chosen division");
             System.out.printf("The remainder of %.1f and %.1f is %.1f\n", number1, number2, remainder);

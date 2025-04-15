@@ -13,7 +13,7 @@ public class Calculator {
         System.out.println("What is the Second number");
         double number2 =scanner.nextDouble();
 
-        System.out.println("Please choose between (A)dd, (S)ubtraction,(M)ultiply or (D)ivide");
+        System.out.println("Please choose between (A) Addition, (S) Subtraction, (M) Multiplication or (D) Division");
         scanner.nextLine();
         String letter;
         letter = scanner.nextLine();

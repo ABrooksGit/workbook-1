@@ -46,13 +46,6 @@ public class Calculator {
         }
 
 
-//
-//        double product = number1 * number2;
-//        double sum = number1 + number2;
-//        double difference = number1 - number2;
-//        double remainder = number1 / number2;
-//
-//        System.out.printf("The product of %.1f and %.1f is %.1f\n", number1, number2, product);
 
 
 

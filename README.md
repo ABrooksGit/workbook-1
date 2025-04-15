@@ -1,2 +1,2 @@
-# workbook-1
+# Workbook-1
 YearUp projects from Workbook 1

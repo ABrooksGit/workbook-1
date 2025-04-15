@@ -50,6 +50,8 @@ public class Calculator {
             System.out.println("You've chosen division");
             System.out.printf("The remainder of %.1f and %.1f is %.1f\n", number1, number2, remainder);
             System.out.printf("%.1f / %.1f = %.1f\n", number1, number2, remainder);
+        }else {
+            System.out.println("You didn't provide any of the following letters: A, S, M, or D");
         }
 
 

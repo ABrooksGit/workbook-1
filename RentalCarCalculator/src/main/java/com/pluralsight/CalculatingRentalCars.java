@@ -14,8 +14,16 @@ public class CalculatingRentalCars {
         //Pickup Date ( as a string)
 
         double originalPrice = 29.99;
+
         // number of days for the rented car
         double calculations = calculations(totalAmountAccumulated, age);
+
+        //System.out.println("Your age is: " + age);
+        //System.out.println("Your pickup day is: " + pickUp);
+        //System.out.println("The original price is " + originalPrice);
+
+
+
 
 
     }
@@ -33,24 +41,32 @@ public class CalculatingRentalCars {
 
         if (week.equals("Monday")){
             System.out.println("Monday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Tuesday")){
             System.out.println("Tuesday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Wednesday")){
             System.out.println("Wednesday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Thursday")){
             System.out.println("Thursday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Friday")) {
             System.out.println("Friday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Saturday")){
             System.out.println("Saturday was chosen");
+            return scanner.nextLine();
         } else if(week.equals("Sunday")){
             System.out.println("Sunday was chosen");
+            return scanner.nextLine();
         } else{
             System.out.println("No Day Chosen");
+
         }
 
-
         return scanner.nextLine();
+
     }
 
     public static double daysRented() {
@@ -61,6 +77,7 @@ public class CalculatingRentalCars {
         double originalPrice = 29.99;
 
         double totalAmountAccumulated = 0;
+
 
         String days = scanner.nextLine();
         if (days.equals("1")) {

@@ -4,25 +4,31 @@ import java.util.Scanner;
 
 public class SandwichPrice {
 
+
+    //main
     public static void main(String[] args) {
 
+
+        // Main Variables
         Scanner scanner = new Scanner(System.in);
-        int age = enterAge();
         double selectedSandwich = SelectSandwich();
+        int age = enterAge();
         double discountedPercentage = discountCheckForSandwiches(selectedSandwich, age);
 
-        System.out.println("Since you are " + age + " years old and ordered the sandwich that costs " + selectedSandwich);
-        System.out.printf("You now have to pay $%.2f", discountedPercentage);
+        //System.out.println("Since you are " + age + " years old and ordered the sandwich that costs " + selectedSandwich);
+        System.out.printf("You have to pay $%.2f", discountedPercentage);
         System.out.println(" Please enjoy your meal!");
 
     }
 
-
+    // Age adjustments
     public static int enterAge(){
         System.out.println("Please enter your Age: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+
+    //Sandwich Selection
     public static double SelectSandwich(){
 
         Scanner scanner = new Scanner(System.in);
@@ -93,17 +99,19 @@ public class SandwichPrice {
 
     }
 
+
+    //discountCheckForSandwiches
     public static double discountCheckForSandwiches(double selectedSandwich, int age) {
 
-
-        Scanner scanner = new Scanner(System.in);
         double discountPercentage = 0;
 
             if (age <= 17) {
                 discountPercentage = .1;
+                System.out.println("Since you are young you get a 10% discount");
             } else if (age >= 65) {
                 discountPercentage = .2;
-                }
+                System.out.println("Since you are old you get a 20% discount");
+            }
         double discount = (selectedSandwich * discountPercentage);
         double finalPrice = selectedSandwich - discount;
         return finalPrice;

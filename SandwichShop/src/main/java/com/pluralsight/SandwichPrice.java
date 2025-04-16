@@ -12,7 +12,7 @@ public class SandwichPrice {
         double discountedPercentage = discountCheckForSandwiches(selectedSandwich, age);
 
         System.out.println("Since you are " + age + " years old and ordered the sandwich that costs " + selectedSandwich);
-        System.out.printf("You now have to pay $%.2f", + discountedPercentage);
+        System.out.printf("You now have to pay $%.2f", discountedPercentage);
         System.out.println(" Please enjoy your meal!");
 
     }
@@ -97,8 +97,8 @@ public class SandwichPrice {
 
 
         Scanner scanner = new Scanner(System.in);
-
         double discountPercentage = 0;
+
             if (age <= 17) {
                 discountPercentage = .1;
             } else if (age >= 65) {
